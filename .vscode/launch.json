@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug '01-parsing' with sample 1",
+            "cargo": {
+                "args": [
+                    "build",
+                ],
+                "filter": {
+                    "name": "01-parsing",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "stdio": [
+                "tests/samples/01-parsing/1.in", // stdin
+                null, // stdout to terminal
+                null, // stderr to terminal
+            ],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
